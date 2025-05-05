@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		AE0C30F92A804B65008F1EAE /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C30F82A804B65008F1EAE /* OnboardingViewModel.swift */; };
 		AE0C30FB2A804B95008F1EAE /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C30FA2A804B95008F1EAE /* WalletViewModel.swift */; };
 		AE0C30FD2A804BC1008F1EAE /* ReceiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0C30FC2A804BC1008F1EAE /* ReceiveViewModel.swift */; };
+		AE0D58182DC9323C00DFE05B /* CKTap in Frameworks */ = {isa = PBXBuildFile; productRef = AE0D58172DC9323C00DFE05B /* CKTap */; };
 		AE1390C72A7DB0AF0098127A /* KeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1390C62A7DB0AF0098127A /* KeyService.swift */; };
 		AE184EFC2BFE52C800374362 /* Amount+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE184EFB2BFE52C800374362 /* Amount+Extensions.swift */; };
 		AE187D782C9BB3B50081D0C3 /* BitcoinDevKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE187D772C9BB3B50081D0C3 /* BitcoinDevKit */; };
@@ -77,6 +78,9 @@
 		AE91CEED2C0FDB70000AAD20 /* SentAndReceivedValues+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91CEEC2C0FDB70000AAD20 /* SentAndReceivedValues+Extensions.swift */; };
 		AE91CEEF2C0FDBC7000AAD20 /* CanonicalTx+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91CEEE2C0FDBC7000AAD20 /* CanonicalTx+Extensions.swift */; };
 		AE96F6622A424C400055623C /* BDKSwiftExampleWalletReceiveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96F6612A424C400055623C /* BDKSwiftExampleWalletReceiveViewModelTests.swift */; };
+		AE9EF83B2DC95C8200121410 /* NFCTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9EF83A2DC95C8200121410 /* NFCTransport.swift */; };
+		AE9EF83E2DC95D2A00121410 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9EF83D2DC95D2A00121410 /* Data+Extensions.swift */; };
+		AE9EF8562DC9697300121410 /* SatsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9EF8552DC9697300121410 /* SatsCardView.swift */; };
 		AEAB03112ABDDB86000C9528 /* FeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAB03102ABDDB86000C9528 /* FeeViewModel.swift */; };
 		AEAB03132ABDDBF4000C9528 /* AmountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAB03122ABDDBF4000C9528 /* AmountViewModel.swift */; };
 		AEAF83B62B7BD4D10019B23B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = AEAF83B52B7BD4D10019B23B /* CodeScanner */; };
@@ -178,6 +182,9 @@
 		AE91CEEC2C0FDB70000AAD20 /* SentAndReceivedValues+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SentAndReceivedValues+Extensions.swift"; sourceTree = "<group>"; };
 		AE91CEEE2C0FDBC7000AAD20 /* CanonicalTx+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CanonicalTx+Extensions.swift"; sourceTree = "<group>"; };
 		AE96F6612A424C400055623C /* BDKSwiftExampleWalletReceiveViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDKSwiftExampleWalletReceiveViewModelTests.swift; sourceTree = "<group>"; };
+		AE9EF83A2DC95C8200121410 /* NFCTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTransport.swift; sourceTree = "<group>"; };
+		AE9EF83D2DC95D2A00121410 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		AE9EF8552DC9697300121410 /* SatsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatsCardView.swift; sourceTree = "<group>"; };
 		AEAB03102ABDDB86000C9528 /* FeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeViewModel.swift; sourceTree = "<group>"; };
 		AEAB03122ABDDBF4000C9528 /* AmountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountViewModel.swift; sourceTree = "<group>"; };
 		AEB130C82A44E4850087785B /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
@@ -204,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0D58182DC9323C00DFE05B /* CKTap in Frameworks */,
 				AE2DD83F2D6FEF3600E5F212 /* BitcoinDevKit in Frameworks */,
 				AE187D782C9BB3B50081D0C3 /* BitcoinDevKit in Frameworks */,
 				AE29ED0F2BBE2E7100EB9C4F /* BitcoinDevKit in Frameworks */,
@@ -279,6 +287,7 @@
 				AE7F67062A744CE200CED561 /* Double+Extensions.swift */,
 				AEB159D42D51A8680006AE9E /* View+Extensions.swift */,
 				AE8D001B2D19F1760029C4C9 /* UIScreen+Extensions.swift */,
+				AE9EF83D2DC95D2A00121410 /* Data+Extensions.swift */,
 				AEE6C74D2ABCB48600442ADD /* BDK+Extensions */,
 			);
 			path = Extensions;
@@ -288,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				AED4CC0B2A1D3A9400CE1831 /* OnboardingView.swift */,
+				AE9EF8552DC9697300121410 /* SatsCardView.swift */,
 				AE3902A32A3B4CD900BEC318 /* HomeView.swift */,
 				AED4CC0F2A1D522100CE1831 /* WalletView.swift */,
 				AE2381B62C61253200F6B00C /* Activity */,
@@ -491,6 +501,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AE9EF83C2DC95C8800121410 /* NFC Service */ = {
+			isa = PBXGroup;
+			children = (
+				AE9EF83A2DC95C8200121410 /* NFCTransport.swift */,
+			);
+			path = "NFC Service";
+			sourceTree = "<group>";
+		};
 		AEB905C12A7EEB9200CD0337 /* Key Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +534,7 @@
 				AEB905C42A7EECAF00CD0337 /* Price Service */,
 				AE6715FB2A9ABF30005C193F /* Fee Service */,
 				AEB905C12A7EEB9200CD0337 /* Key Service */,
+				AE9EF83C2DC95C8800121410 /* NFC Service */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -595,6 +614,7 @@
 				AE2DD8382D6FE9B000E5F212 /* BitcoinDevKit */,
 				AE2DD83B2D6FEC3100E5F212 /* BitcoinDevKit */,
 				AE2DD83E2D6FEF3600E5F212 /* BitcoinDevKit */,
+				AE0D58172DC9323C00DFE05B /* CKTap */,
 			);
 			productName = BDKSwiftExampleWallet;
 			productReference = AE4984782A1BBBD6009951E2 /* BDKSwiftExampleWallet.app */;
@@ -653,6 +673,7 @@
 				AEB735D12B2CC4B900F99DBB /* XCRemoteSwiftPackageReference "BitcoinUI" */,
 				AEAF83B42B7BD4D10019B23B /* XCRemoteSwiftPackageReference "CodeScanner" */,
 				AEA2DEF12D70F8840067C0EB /* XCRemoteSwiftPackageReference "bdk-swift" */,
+				AE0D58162DC9323C00DFE05B /* XCLocalSwiftPackageReference "../rust-cktap/cktap-swift" */,
 			);
 			productRefGroup = AE4984792A1BBBD6009951E2 /* Products */;
 			projectDirPath = "";
@@ -700,8 +721,10 @@
 				AEB905C32A7EEBF000CD0337 /* BackupInfo.swift in Sources */,
 				AE783A072AB4F7C7005F0CBA /* FeeView.swift in Sources */,
 				AE2B8C1D2A9678C900815B2F /* FeeService.swift in Sources */,
+				AE9EF83B2DC95C8200121410 /* NFCTransport.swift in Sources */,
 				AE8D001C2D19F1760029C4C9 /* UIScreen+Extensions.swift in Sources */,
 				AEC2CF5A2ABFBA19008065E4 /* BuildTransactionViewModel.swift in Sources */,
+				AE9EF83E2DC95D2A00121410 /* Data+Extensions.swift in Sources */,
 				AE2B8C1F2A96797300815B2F /* RecommendedFees.swift in Sources */,
 				AE7F670C2A7451D700CED561 /* CurrencyCode.swift in Sources */,
 				AE2ADD762B61EFEB00C2A823 /* HomeViewModel.swift in Sources */,
@@ -727,6 +750,7 @@
 				AE34DDAC2B6B31ED00F04AD4 /* WalletRecoveryView.swift in Sources */,
 				AE2ADD742B61E8F500C2A823 /* SettingsView.swift in Sources */,
 				AE2381AF2C605B1D00F6B00C /* ActivityListViewModel.swift in Sources */,
+				AE9EF8562DC9697300121410 /* SatsCardView.swift in Sources */,
 				AE6F34D82AA6C1800087E700 /* Network+Extensions.swift in Sources */,
 				AE1390C72A7DB0AF0098127A /* KeyService.swift in Sources */,
 				AED4CC0A2A1D297600CE1831 /* BDKService.swift in Sources */,
@@ -1054,6 +1078,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		AE0D58162DC9323C00DFE05B /* XCLocalSwiftPackageReference "../rust-cktap/cktap-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../rust-cktap/cktap-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		AE7D5A0C2A7EE62200EAC8CE /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1090,6 +1121,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AE0D58172DC9323C00DFE05B /* CKTap */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CKTap;
+		};
 		AE187D772C9BB3B50081D0C3 /* BitcoinDevKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BitcoinDevKit;

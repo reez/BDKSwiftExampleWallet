@@ -7,6 +7,7 @@
 
 import BitcoinDevKit
 import BitcoinUI
+import CKTap
 import SwiftUI
 
 struct OnboardingView: View {
@@ -31,6 +32,22 @@ struct OnboardingView: View {
                     Spacer()
 
                     if viewModel.words.isEmpty {
+                        Button {
+                            viewModel.beginNFCSession()
+                        } label: {
+                            Image(systemName: "creditcard")
+                                .transition(.symbolEffect(.disappear))
+                        }
+                        .tint(.secondary)
+                        .font(.title)
+                        .opacity(animateContent ? 1 : 0)
+                        .offset(x: animateContent ? 0 : 100)
+                        .animation(
+                            .spring(response: 0.6, dampingFraction: 0.7).delay(1.1),
+                            value: animateContent
+                        )
+                        .disabled(viewModel.isScanning)
+
                         Button {
                             showingScanner = true
                         } label: {
@@ -210,6 +227,14 @@ struct OnboardingView: View {
                 },
                 pasteAction: {}
             )
+        }
+        .sheet(isPresented: $viewModel.showNFCSucceessSheet) {
+            SatsCardView(
+                status: viewModel.lastStatusResponse,
+                showNFCSucceessSheet: $viewModel.showNFCSucceessSheet
+            )
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
         .onAppear {
             withAnimation {
