@@ -1072,10 +1072,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		AF77B2212F4B2C9E00000001 /* XCRemoteSwiftPackageReference "bdk-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bitcoindevkit/bdk-swift";
+			repositoryURL = "https://github.com/bitcoindevkit/bdk-swift.git";
 			requirement = {
 				kind = exactVersion;
-				version = 2.3.1;
+				version = 3.0.0;
 			};
 		};
 		AF77B2222F4B2C9E00000002 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
